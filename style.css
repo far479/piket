@@ -84,7 +84,7 @@ table {
 th, td {
     border: 1px solid #ddd;
     padding: 12px; /* Padding lebih besar untuk kenyamanan */
-    text-align: left;
+    text-align: center;
 }
 
 th {
