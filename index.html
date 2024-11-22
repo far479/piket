@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="id">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pengisian Piket</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <h1>Pengisian Piket Rubin Hasanudin</h1>
+
+    <!-- Form untuk mengisi piket -->
+    <h2>"KEBERSIHAN SEBAGIAN DARI IMAN"</h2>
+    <form id="piketForm">
+      <label for="name">Nama:</label>
+      <select id="name" required>
+        <option value="">Pilih Nama</option>
+        <option value="Bang Ugem">Bang Ugem</option>
+        <option value="Bang Zafran">Bang Zafran</option>
+        <option value="Bang Andi">Bang Andi</option>
+        <option value="Bang Faqih">Bang Faqih</option>
+        <option value="Bang Syafiq">Bang Syafiq</option>
+        <option value="Syamil">Syamil</option>
+        <option value="Farisan">Farisan</option>
+      </select>
+      <label for="date">Tanggal:</label>
+      <input type="date" id="date" required />
+      <button type="submit">Kirim Piket</button>
+    </form>
+
+    <!-- Daftar Piket -->
+    <h2>Daftar Piket</h2>
+    <table id="piketTable">
+      <thead>
+        <tr>
+          <th>Nama</th>
+          <th>Tanggal</th>
+          <th>Aksi</th>
+        </tr>
+      </thead>
+      <tbody>
+        <!-- Data piket akan ditampilkan di sini -->
+      </tbody>
+    </table>
+
+    <script src="script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,104 @@
+/* style.css */
+
+/* Reset default margin dan padding */
+body, h1, h2, table {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    padding: 20px;
+    background-color: #f9f9f9; /* Warna latar belakang yang lembut */
+    color: #333; /* Warna teks yang lebih gelap untuk kontras yang baik */
+}
+
+/* Gaya untuk judul utama */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #4CAF50; /* Warna hijau untuk judul utama */
+}
+
+/* Gaya untuk sub-judul */
+h2 {
+    text-align: center;
+    margin: 20px 0;
+    color: #555; /* Warna lebih lembut untuk sub-judul */
+}
+
+/* Gaya untuk form */
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+    background-color: #fff; /* Latar belakang form putih */
+    padding: 20px;
+    border-radius: 8px; /* Sudut melengkung */
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1); /* Bayangan halus */
+}
+
+/* Gaya untuk label dan input */
+label {
+    margin: 10px 0 5px;
+    font-weight: bold; /* Menebalkan label */
+}
+
+/* Gaya untuk select dan input date */
+select, input[type="date"], button {
+    width: 100%;
+    max-width: 300px; /* Maksimal lebar untuk input */
+    padding: 12px; /* Padding lebih besar untuk kenyamanan */
+    margin-bottom: 15px; /* Jarak antar elemen */
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    font-size: 16px; /* Ukuran font yang lebih besar */
+}
+
+/* Gaya untuk tombol */
+button {
+    background-color: #4CAF50; /* Warna hijau */
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px; /* Ukuran font tombol */
+    transition: background-color 0.3s; /* Transisi halus saat hover */
+}
+
+button:hover {
+    background-color: #45a049; /* Warna hijau lebih gelap saat hover */
+}
+
+/* Gaya untuk tabel */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+    background-color: #fff; /* Latar belakang tabel putih */
+    border-radius: 8px; /* Sudut melengkung */
+    overflow: hidden; /* Menghindari sudut tajam */
+}
+
+th, td {
+    border: 1px solid #ddd;
+    padding: 12px; /* Padding lebih besar untuk kenyamanan */
+    text-align: left;
+}
+
+th {
+    background-color: #f2f2f2; /* Warna latar belakang header tabel */
+    font-weight: bold; /* Menebalkan teks header */
+}
+
+@media (max-width: 600px) {
+    /* Gaya untuk tampilan mobile */
+    h1, h2 {
+        font-size: 1.5em; /* Ukuran font lebih kecil di mobile */
+    }
+
+    select, input[type="date"], button {
+        width: 90%; /* Lebar input lebih besar di mobile */
+    }
+}
